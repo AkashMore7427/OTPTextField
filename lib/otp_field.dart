@@ -137,7 +137,7 @@ class _OTPTextFieldState extends State<OTPTextField> {
       margin: widget.margin,
       decoration: BoxDecoration(
           color: _otpFieldStyle.backgroundColor,
-          borderRadius: BorderRadius.circular(widget.outlineBorderRadius)),
+        shape: BoxShape.circle,),
       child: TextField(
         controller: _textControllers[i],
         keyboardType: widget.keyboardType,
@@ -199,7 +199,7 @@ class _OTPTextFieldState extends State<OTPTextField> {
         ? OutlineInputBorder(
             borderSide: BorderSide(color: color),
             borderRadius: BorderRadius.circular(widget.outlineBorderRadius))
-        : UnderlineInputBorder(borderSide: BorderSide(color: color));
+        : UnderlineInputBorder(borderSide: BorderSide.none);
   }
 
   String _getCurrentPin() {
