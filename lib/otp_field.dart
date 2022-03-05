@@ -136,7 +136,8 @@ class _OTPTextFieldState extends State<OTPTextField> {
       width: widget.fieldWidth,
       margin: widget.margin,
       decoration: BoxDecoration(
-          color: _otpFieldStyle.backgroundColor,
+          color: Colors.black,
+        border:Border.all(color:Colors.grey,),
         shape: BoxShape.circle,),
       child: TextField(
         controller: _textControllers[i],
